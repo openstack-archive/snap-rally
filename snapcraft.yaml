@@ -1,0 +1,36 @@
+name: rally
+version: 0.7.0
+summary: OpenStack Benchmark-as-a-Service (rally)
+description: |
+  Rally is a Benchmark-as-a-Service project for OpenStack.
+  .
+  Rally is intended to provide the community with a benchmarking
+  tool that is capable of performing specific, complicated and
+  reproducible test cases on real deployment scenarios.
+confinement: devmode
+grade: devel
+
+apps:
+  rally:
+    command: rally
+    plugs:
+      - network
+      - network-bind
+      - home
+  rally-manage:
+    command: rally-manage
+    plugs:
+      - network
+      - network-bind
+      - home
+
+parts:
+  rally:
+    plugin: python
+    python-version: python2
+    source: http://tarballs.openstack.org/rally/rally-0.7.0.tar.gz
+    build-packages:
+      - libffi-dev
+      - libssl-dev
+      - pkg-config
+      - gcc
