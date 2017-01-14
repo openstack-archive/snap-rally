@@ -7,7 +7,10 @@ description: |
   Rally is intended to provide the community with a benchmarking
   tool that is capable of performing specific, complicated and
   reproducible test cases on real deployment scenarios.
-confinement: devmode
+# Main target for rally is classic host, and it won't run
+# under strict due to use in multiprocessing of shared
+# memory.
+confinement: classic
 grade: devel
 
 apps:
@@ -23,6 +26,8 @@ apps:
       - network
       - network-bind
       - home
+    aliases:
+      - rally-manage
 
 parts:
   rally:
