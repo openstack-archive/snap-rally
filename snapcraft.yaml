@@ -1,6 +1,6 @@
 name: rally
 version: 0.7.0
-summary: OpenStack Benchmark-as-a-Service (rally)
+summary: OpenStack Benchmark-as-a-Service
 description: |
   Rally is a Benchmark-as-a-Service project for OpenStack.
   .
