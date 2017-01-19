@@ -7,7 +7,7 @@ as a service, Rally.
 
 The rally snap can be installed directly from the snap store:
 
-    sudo snap install --edge rally
+    sudo snap install --edge --classic rally
 
 then setup the alias for rally-manage (this will automatically happen at some
 point in the future):
