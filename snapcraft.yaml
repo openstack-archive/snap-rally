@@ -16,16 +16,8 @@ grade: devel
 apps:
   rally:
     command: rally
-    plugs:
-      - network
-      - network-bind
-      - home
   rally-manage:
     command: rally-manage
-    plugs:
-      - network
-      - network-bind
-      - home
     aliases:
       - rally-manage
 
