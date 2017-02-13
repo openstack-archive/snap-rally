@@ -1,5 +1,5 @@
 name: rally
-version: 0.7.0
+version: 0.8.1
 summary: OpenStack Benchmark-as-a-Service
 description: |
   Rally is a Benchmark-as-a-Service project for OpenStack.
@@ -33,7 +33,7 @@ parts:
   rally:
     plugin: python
     python-version: python2
-    source: http://tarballs.openstack.org/rally/rally-0.7.0.tar.gz
+    source: http://tarballs.openstack.org/rally/rally-$SNAPCRAFT_PROJECT_VERSION.tar.gz
     build-packages:
       - libffi-dev
       - libssl-dev
